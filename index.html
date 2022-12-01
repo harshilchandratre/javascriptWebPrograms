@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <p id="this"></p>
+    <button id="btn" type="button" onclick="printthis()">Click this</button>
+    <script>
+        function printthis(){
+            if(document.getElementById("this").innerHTML == ""){
+                document.getElementById("this").innerHTML = "Hello";
+            }
+            else if(document.getElementById("this").innerHTML == "Hello"){
+                document.getElementById("this").innerHTML = "Hello again!";
+            }
+            else if(document.getElementById("this").innerHTML == "Hello again!"){
+                document.getElementById("this").innerHTML = "Hello";
+            }
+            
+        }
+        
+    </script>
+</body>
+</html>
